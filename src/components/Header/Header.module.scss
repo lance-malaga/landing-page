@@ -2,6 +2,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    align-items: center;
     margin-bottom: 70px;
 }
 
@@ -22,6 +23,10 @@
     gap: 100px;
     text-transform: uppercase;
     font-family: var(--font-secondary);
+}
+
+.nav__links a {
+    border-bottom: 3px solid var(--color-black);
 }
 
 @media (max-width: 650px) {

@@ -14,6 +14,9 @@ export default function Header(){
                     <p>VENTURE</p>
                 </Link>
             </div>
+            <div className={styles.nav__links}>
+                <Link href={'/'}> Sign up </Link>
+            </div>
         </header>
     )
 }
