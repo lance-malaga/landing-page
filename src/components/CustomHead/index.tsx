@@ -7,8 +7,8 @@ interface ICustomHeadProps {
 export default function CustomHead (props:ICustomHeadProps) {
     return (
         <Head>
-            <link rel="icon" href="/icons/logo-black.svg" />
-            <title>Tomo {props.name ? ` | ${props.name}` : ''  }</title>
+            <link rel="icon" href="/logo-black.svg" />
+            <title>Venture {props.name ? ` | ${props.name}` : ''  }</title>
         </Head>
     )
 }
