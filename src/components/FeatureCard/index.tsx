@@ -1,3 +1,4 @@
+import Spline from '@splinetool/react-spline'
 import styles from './FeatureCard.module.scss'
 
 export default function FeatureCard(props:IFeatureCardProps) {
@@ -5,7 +6,7 @@ export default function FeatureCard(props:IFeatureCardProps) {
         <div className={styles.feature_card}>
             {props.link &&
                 <div className={styles.feature_card__graphic}>
-                    {/* <Spline scene={props.link} /> */}
+                    <Spline scene={props.link} />
                 </div>
             }
             <hr/>

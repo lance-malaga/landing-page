@@ -2,12 +2,12 @@
     width: 330px;
     margin-top: 120px;
     &__graphic {
-        
+        cursor: pointer;
     }
     hr {
         border-top: 5px solid var(--color-black);
         height: 0;
-        margin-bottom: 30px;
+        margin: 10px 0 30px;
     }
     h4 {
         font-size: 20px;
