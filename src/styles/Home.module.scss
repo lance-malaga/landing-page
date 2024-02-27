@@ -7,9 +7,11 @@
 .welcome {
     display: flex;
     flex-wrap: wrap;
-
+    &__graphic {
+        width: 60%;
+    }
     &__content {
-        width: 50%;
+        width: 40%;
     }
     h1 {
         font-size: 50px;
@@ -40,5 +42,26 @@
     .features {
         row-gap: 50px;
         justify-content: center;
+    }
+    .welcome {
+        &__content {
+            width: 80%;
+        }
+        &__graphic {
+            width: 100%;
+        }
+    }
+}
+@media (max-width: 700px) {
+    .home__container {
+        padding: 30px;
+    }
+    .welcome {
+        &__content {
+            width: 100%;
+        }
+    }
+    .features {
+        gap: 30px;
     }
 }

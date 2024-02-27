@@ -2,6 +2,7 @@ import CustomHead from '@/components/CustomHead';
 import FeatureCard from '@/components/FeatureCard';
 import Header from '@/components/Header'
 import { features } from '@/data/features';
+import Spline from '@splinetool/react-spline'
 import styles from '@/styles/Home.module.scss'
 
 export default function Home() {
@@ -19,7 +20,7 @@ export default function Home() {
 						</p>
 					</div>
 					<div className={styles.welcome__graphic}>
-						spline
+						<Spline scene={'https://prod.spline.design/QqbuxiSWlluTDqDm/scene.splinecode'} />
 					</div>
 				</div>
 				<div className={styles.features}>
