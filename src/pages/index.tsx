@@ -18,6 +18,7 @@ export default function Home() {
 						<p>
 							Discover the perfect place to call home with Venture, where we provide comprehensive insights into Vancouver's major cities. From average rent prices to greenery spaces and density percentages, we've got you covered. Explore our user-friendly platform and make informed decisions for your ideal living experience in Vancouver.
 						</p>
+						<button>Join Now</button>
 					</div>
 					<div className={styles.welcome__graphic}>
 						<Spline scene={'https://prod.spline.design/QqbuxiSWlluTDqDm/scene.splinecode'} />
