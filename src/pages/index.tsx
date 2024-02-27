@@ -35,6 +35,9 @@ export default function Home() {
 					))}
 				</div>
 			</main>
+			<footer>
+				Venture | Landing Page 2024
+			</footer>
 		</div>
 	);
 }
