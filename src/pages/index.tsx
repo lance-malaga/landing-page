@@ -1,9 +1,13 @@
+import Spline from '@splinetool/react-spline'
+import styles from '@/styles/Home.module.scss'
+
+import { features } from '@/data/features';
+
 import CustomHead from '@/components/CustomHead';
 import FeatureCard from '@/components/FeatureCard';
 import Header from '@/components/Header'
-import { features } from '@/data/features';
-import Spline from '@splinetool/react-spline'
-import styles from '@/styles/Home.module.scss'
+import Footer from '@/components/Footer';
+import NewsLetter from '@/components/NewsLetter';
 
 export default function Home() {
 	return (
@@ -11,7 +15,7 @@ export default function Home() {
 			<CustomHead name='Landing Page'/>
 			<Header/>
 			<main>
-				<div className={styles.welcome}>
+				<section className={styles.welcome}>
 					<div className={styles.welcome__content}>
 						<h1>Welcome to Venture</h1>
 						<h6>Your Ultimate Guide to Vancouver Living!</h6>
@@ -23,21 +27,23 @@ export default function Home() {
 					<div className={styles.welcome__graphic}>
 						<Spline scene={'https://prod.spline.design/QqbuxiSWlluTDqDm/scene.splinecode'} />
 					</div>
-				</div>
-				<div className={styles.features}>
-					{features.map((item, index) => (
-						<FeatureCard 
-							key={index}
-							title={item.title}
-							desc={item.desc}
-							link={item.link}
-						/>
-					))}
-				</div>
+				</section>
+				<section className={styles.features}>
+					<h3>FEATURES</h3>
+					<div className={styles.features__container}>
+						{features.map((item, index) => (
+							<FeatureCard 
+								key={index}
+								title={item.title}
+								desc={item.desc}
+								link={item.link}
+							/>
+						))}
+					</div>
+				</section>
+				<NewsLetter/>
 			</main>
-			<footer>
-				Venture | Landing Page 2024
-			</footer>
+			<Footer/>
 		</div>
 	);
 }

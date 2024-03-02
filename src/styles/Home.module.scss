@@ -2,13 +2,6 @@
     padding: 80px 100px 100px;
     max-width: 1440px;
     margin: 0 auto;
-
-    footer {
-        border-top: 1px solid var(--color-black);
-        text-align: center;
-        padding-top: 50px;
-        margin: 100px 0 50px;
-    }
 }
 
 .welcome {
@@ -49,17 +42,25 @@
 }
 
 .features {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 100px;
-    justify-content: space-between;
+    margin-top: 120px;
+    h3 {
+        font-size: 30px;
+        font-weight: var(--font-bold);
+        margin-bottom: 30px;
+        letter-spacing: 8px;
+        word-wrap: break-word;
+    }
+    &__container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 100px;
+        justify-content: space-between;
+    }
 }
-
-
 
 @media (max-width: 1389px) {
     .welcome,
-    .features {
+    .features__container {
         row-gap: 50px;
         justify-content: center;
     }
