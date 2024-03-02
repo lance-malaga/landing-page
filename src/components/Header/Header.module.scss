@@ -21,12 +21,16 @@
     display: flex;
     flex-wrap: wrap;
     gap: 100px;
-    text-transform: uppercase;
     font-family: var(--font-secondary);
 }
 
 .nav__links a {
     border-bottom: 3px solid var(--color-black);
+    transition: 0.5s all ease-in-out;
+}
+
+.nav__links a:hover {
+    opacity: 0.5;
 }
 
 @media (max-width: 650px) {
